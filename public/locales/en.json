@@ -3,8 +3,25 @@
   "language": "Language",
   "select_language": "Select your language",
   "about": {
-    "me": "With a background in database administration, and technical support. In the last year I spent 1300+ hours studying and working in a remote environment, in pair programming, using GitHub, industry-standardgit-flow, and daily stand ups to communicate and collaborate with international remote developers.",
+    "me": "With a background in database administration and technical support, I have specialized in web application development in recent years, focusing on Ruby on Rails for backend and JavaScript with React and Vue for frontend. Additionally, I have experience with Gitflow, agile methodologies, and remote work.",
     "developer": "I'm a Full Stack Developer"
+  },
+  "experience": {
+    "title": "Experience",
+    "company": "Company",
+    "role": "Role",
+    "job1": {
+      "company": "NTT DATA Europe & Latam",
+      "date": "(Feb 2014 - Present)",
+      "role": "Center Developer",
+      "jobDescription": "Ruby on Rails, Vue, MongoDB, Jira, Confluence, remote work"
+    },
+    "job2": {
+      "company": "Personal Projects",
+      "date": "(Mar 2013 - Present)",
+      "role": "Full-Stack Developer",
+      "jobDescription": "Ruby on Rails, JavaScript, PostgreSQL, React, GitFlow, remote work"
+    }
   },
   "contactForm": {
     "title": "Contact",
@@ -17,7 +34,7 @@
     "hey": "Hey There.",
     "me": "I'm César.",
     "developer": "I'm a Full Stack Developer",
-    "perfil": "With a background in database administration, and technical support. In the last year I spent 1300+ hours studying and working in a remote environment, in pair programming, using GitHub, industry-standard git-flow, and daily stand ups to communicate and collaborate with international remote developers.",
+    "perfil": "With a background in database administration and technical support, I have specialized in web application development in recent years, focusing on Ruby on Rails for backend and JavaScript with React and Vue for frontend. Additionally, I have experience with Gitflow, agile methodologies, and remote work.",
     "perfil2": "I can help you build a product , feature or website. Look through some of my work and experience!",
     "menu": {
       "me": "Me",
@@ -90,7 +107,7 @@
       "description": "This is a web about Adventure Sports experiences"
     }
   },
-  "skills" : {
+  "skills": {
     "title": "Skills"
   },
   "ticTacToe": {
@@ -100,5 +117,4 @@
     "winner": "Winner :",
     "draw": "Draw"
   }
-
 }
