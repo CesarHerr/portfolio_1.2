@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import { useInView } from 'react-intersection-observer';
 import { useDispatch } from 'react-redux';
 import confetti from 'canvas-confetti';
@@ -77,6 +78,8 @@ function TicTacToe() {
     return newBoard.every((square) => square !== null);
   };
 
+  const { t } = useTranslation();
+
   useEffect(() => {
     const performComputerMove = () => {
       if (turn === turns.O && isGameInProgress) {
@@ -128,10 +131,10 @@ function TicTacToe() {
       <div ref={refAbout} className="flex mt-10 justify-center">
         <div className="flex justify-center gap-2 w-full">
           <p className="text-xs font-bold text-myBlue -rotate-12 animate-pulse curs">
-            It&apos;s your turn !
+            {t('ticTacToe.message1')}
           </p>
           <p className="text-xs font-bold text-myBlue rotate-12 animate-pulse-slow">
-            Come on is easy !
+            {t('ticTacToe.message2')}
           </p>
         </div>
       </div>
@@ -153,7 +156,7 @@ function TicTacToe() {
       {winner !== null && (
         <div className="fixed w-full h-screen top-0 left-0 grid place-items-center bg-myBlue z-50 opacity-0.9">
           <div className="text-4xl text-myYellow flex flex-col justify-around h-3/6">
-            <h2> {winner === false ? 'Tie' : 'Winner :'} </h2>
+            <h2> {winner === false ? t('ticTacToe.draw') : t('ticTacToe.winner')} </h2>
 
             <header className="win">
               {winner && <Square>{winner}</Square>}
@@ -163,7 +166,7 @@ function TicTacToe() {
                 className="mt-20 p-5 rounded cursor-pointer bg-transparent"
                 onClick={resetGame}
               >
-                Start New Game
+                {t('ticTacToe.new')}
               </button>
             </footer>
           </div>

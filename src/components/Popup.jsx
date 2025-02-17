@@ -171,14 +171,14 @@ function Popup() {
                 </p>
                 {allProjects[project].link ? (
                   <p className="text-left sm:text-lg">
-                    You can see the API documentation{' '}
+                    {t('popup.apiDoc.documentation')}{' '}
                     <a
                       href={allProjects[project].link}
                       className="font-extrabold"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      here
+                      {t('popup.apiDoc.here')}
                     </a>
                   </p>
                 ) : null}

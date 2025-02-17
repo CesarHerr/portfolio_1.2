@@ -12,7 +12,8 @@ function Navigate() {
   const { onProject, onAbout, onSkills, onContact, theme } = useSelector(
     (state) => state.project
   );
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lenguaje = i18n.language;
 
   const handleClick = () => {
     if (theme === 'dark') {
@@ -41,6 +42,24 @@ function Navigate() {
       className="flex flex-col w-full md:w-[20rem] xl:w-[25rem] items-start justify-center gap-5 
       md:fixed h-screen bg-myYellow z-10 relative md:mx-auto dark:bg-slate-950 dark:text-white custom-opacity-nav"
     >
+      {lenguaje === 'es' && (
+        <button onClick={() => i18n.changeLanguage('en')} className="md:hidden">
+          <img
+              src={images.english}
+              alt="spain flag"
+              className="w-[50px] h-[50px] absolute top-9 left-3"
+            />
+        </button>
+      )}
+      {lenguaje === 'en' && (
+        <button onClick={() => i18n.changeLanguage('es')} className="md:hidden">
+          <img
+                src={images.spain}
+                alt="spain flag"
+                className="w-[50px] h-[50px] absolute top-9 left-3"
+              />
+        </button>
+      )}
       <header
         className="flex justify-center items-center max-w-[400px] top-2 md:flex-col md:items-end 
       gap-0 md:ml-10 w-full sm:w-auto"
