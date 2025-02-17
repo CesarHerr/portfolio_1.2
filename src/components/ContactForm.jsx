@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import { setOnContact } from '../redux/projectSlice';
@@ -9,6 +10,7 @@ function ContactForm() {
   const { ref: refContactName, inView: inViewContactName } = useInView();
   const { ref: refContactEmail, inView: inViewContactEmail } = useInView();
   const { ref: refContactMessage, inView: inViewContactMessage } = useInView();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -26,7 +28,7 @@ function ContactForm() {
           inView ? 'titleAnimation' : ''
         }`}
       >
-        Contact
+        {t('contactForm.title')}
       </h2>
 
       <form
@@ -47,7 +49,7 @@ function ContactForm() {
             name="floating_name"
             id="floating_name"
             className="block py-2.5 px-0 w-full text-lg text-myGray dark:text-white pl-2
-          bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer"
+            bg-transparent border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-myPurple peer"
             placeholder=" "
             required
           />
@@ -59,7 +61,7 @@ function ContactForm() {
           peer-focus:text-myBlue dark:peer-focus:text-myLightBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
-            Name{' '}
+            {t('contactForm.name')}{' '}
           </label>
         </div>
 
@@ -86,7 +88,7 @@ function ContactForm() {
           peer-focus:text-myBlue dark:peer-focus:text-myLightBlue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0
             peer-focus:scale-75 peer-focus:-translate-y-9"
           >
-            Email address
+            {t('contactForm.email')}
           </label>
         </div>
 
@@ -98,7 +100,7 @@ function ContactForm() {
           border-gray-300 focus:ring-blue-500 focus:border-blue-500 ${
             inViewContactMessage ? 'moveBottom' : 'opacity-0'
           }`}
-            placeholder="Leave a comment..."
+            placeholder={t('contactForm.textAreaPlaceHolder')}
             aria-label="write me"
           ></textarea>
 
@@ -107,7 +109,7 @@ function ContactForm() {
           border border-myGray hover:translate-x-2 hover:translate-y-2 hover:shadow-none transition-all mt-14
           ${inViewContactMessage ? 'moveBottom' : 'opacity-0'}`}
           >
-            Submit
+            {t('contactForm.submit')}
           </button>
         </div>
       </form>
