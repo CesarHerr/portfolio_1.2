@@ -15,7 +15,7 @@
     "@reduxjs/toolkit": "^1.9.7",
     "canvas-confetti": "1.9.1",
     "framer-motion": "^10.16.5",
-    "gh-pages": "^6.1.0",
+    "gh-pages": "^6.3.0",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.3",
     "i18next-http-backend": "^3.0.2",
