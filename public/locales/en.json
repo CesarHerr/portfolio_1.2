@@ -56,6 +56,10 @@
       "name": "Hiking and Adventure Sports",
       "description": "This is a web about Adventure Sports experiences",
       "description2": "Web app created with HTML, SASS and Vanilla JavaScript."
+    },
+    "apiDoc": {
+      "documentation": "You can see the API documentation",
+      "here": "here"
     }
   },
   "projects": {
@@ -93,7 +97,6 @@
     "message1": "It's your turn !",
     "message2": "Come on is easy !",
     "new": "Exit",
-    "tie": "Tie",
     "winner": "Winner :",
     "draw": "Draw"
   }

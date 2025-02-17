@@ -22,6 +22,8 @@ import catBlack from './catBlack.png';
 import pinNight from './pin2.png';
 import cloud from './nube.png';
 import sun from './sun.png';
+import spain from './es_spain.png';
+import english from './united_kingdom.png';
 
 const images = {
   sun,
@@ -48,6 +50,8 @@ const images = {
   zelda,
   post,
   pin,
+  spain,
+  english
 };
 
 
