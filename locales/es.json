@@ -1,0 +1,120 @@
+{
+  "welcome": "¡Bienvenido a mi App!",
+  "language": "Idioma",
+  "select_language": "Selecciona tu idioma",
+  "about": {
+    "me": "Con experiencia en administración de bases de datos y soporte técnico. En los últimos años, me he especializado en el desarrollo de aplicaciones web, destacando en Ruby on Rails para backend y JavaScript con React y Vue para frontend. Además, cuento con experiencia en Gitflow, metodologías ágiles y trabajo remoto.",
+    "developer": "Desarrollador Full Stack"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "company": "Empresa",
+    "rol": "cargo",
+    "job1": {
+      "company": "NTT DATA Europe & Latam",
+      "date": "(feb 2014 - Presente)",
+      "role": "Center developer",
+      "jobDescription": "Ruby on rails, vue, mongoDB, Jira, confluence, trabajo remoto"
+    },
+    "job2": {
+      "company": "Proyectos personales",
+      "date": "(mar 2013 - Presente)",
+      "role": "Desarrollador Full-Stack",
+      "jobDescription": "Ruby on rails, JavaScript, postgresSQl, react, gitflow, trabajo remoto"
+    }
+  },
+  "contactForm": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Dirección de correo electrónico",
+    "textAreaPlaceHolder": "Deja un comentario...",
+    "submit": "Enviar"
+  },
+  "navigate": {
+    "hey": "Que tal!",
+    "me": "Soy César.",
+    "developer": "Desarrollador Full Stack",
+    "perfil": "Con experiencia en administración de bases de datos y soporte técnico. En los últimos años, me he especializado en el desarrollo de aplicaciones web, destacando en Ruby on Rails para backend y JavaScript con React y Vue para frontend. Además, cuento con experiencia en Gitflow, metodologías ágiles y trabajo remoto.",
+    "perfil2": "Puedo ayudarte a construir una app, funcionalidad o sitio web. ¡Mira algunos de mis trabajos y experiencia!",
+    "menu": {
+      "me": "Yo",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto"
+    }
+  },
+  "popup": {
+    "project1": {
+      "name": "Rent for a day",
+      "description": "Esta es una aplicación basada en reservas para alquilar una propiedad/alojamiento por un día.",
+      "description2": "Aplicación full-stack creada con React y Rails."
+    },
+    "project2": {
+      "name": "Paid Ups",
+      "description": "Esta aplicación está diseñada para ayudarte a gestionar tus finanzas y gastos, ayudando a mantener una organización financiera clara para finanzas personales, familiares o relacionadas con el trabajo.",
+      "description2": "Aplicación full-stack creada con Ruby on Rails y PostgreSQL."
+    },
+    "project3": {
+      "name": "Recipe App",
+      "description": "La aplicación de recetas lleva un registro de todas tus recetas, ingredientes e inventario.",
+      "description2": "Aplicación full-stack creada con Ruby on Rails y PostgreSQL."
+    },
+    "project4": {
+      "name": "Enciclopedia Bowtf",
+      "description": "Esta aplicación web es una Aplicación de Página Única (SPA) que sirve como enciclopedia para todos los elementos interactivos en el juego en el mundo de Hyrule.",
+      "description2": "Aplicación web creada con React-Redux."
+    },
+    "project5": {
+      "name": "Space Travelers Hub",
+      "description": "El centro de viajeros espaciales es una aplicación web que permite a los usuarios reservar cohetes y unirse a misiones espaciales.",
+      "description2": "Aplicación web creada con React-Redux."
+    },
+    "project6": {
+      "name": "Hiking and Adventure Sports",
+      "description": "Este es un sitio web sobre experiencias de deportes de aventura.",
+      "description2": "Aplicación web creada con HTML, SASS y JavaScript Vanilla."
+    },
+    "apiDoc": {
+      "documentation": "Puedes ver la documentación de la API",
+      "here": "aquí"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "click": "Haz clic para más detalles 👆",
+    "project1": {
+      "name": "Rent for a day",
+      "description": "Esta es una aplicación basada en reservas para alquilar una propiedad/alojamiento por un día."
+    },
+    "project2": {
+      "name": "Paid Ups",
+      "description": "Esta aplicación está diseñada para ayudarte a gestionar tus finanzas y gastos, ayudando a mantener una organización financiera clara para finanzas personales, familiares o relacionadas con el trabajo."
+    },
+    "project3": {
+      "name": "Recipe App",
+      "description": "La aplicación de recetas lleva un registro de todas tus recetas, ingredientes e inventario."
+    },
+    "project4": {
+      "name": "Enciclopedia Bowtf",
+      "description": "Esta aplicación web es una Aplicación de Página Única (SPA) que sirve como enciclopedia para todos los elementos interactivos en el juego en el mundo de Hyrule."
+    },
+    "project5": {
+      "name": "Space Travelers Hub",
+      "description": "El centro de viajeros espaciales es una aplicación web que permite a los usuarios reservar cohetes y unirse a misiones espaciales."
+    },
+    "project6": {
+      "name": "Hiking and Adventure Sports",
+      "description": "Este es un sitio web sobre experiencias de deportes de aventura."
+    }
+  },
+  "skills": {
+    "title": "Habilidades"
+  },
+  "ticTacToe": {
+    "message1": "¡Es tu turno!",
+    "message2": "¡Vamos, es fácil!",
+    "new": "Salir",
+    "winner": "Ganador :",
+    "draw": "Empate"
+  }
+}
