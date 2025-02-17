@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from "react-i18next";
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
 import Language from './Language';
@@ -8,6 +9,7 @@ import { setOnSkills } from '../redux/projectSlice';
 function Skills() {
   const dispatch = useDispatch();
   const { ref, inView } = useInView();
+  const { t } = useTranslation();
 
   useEffect(() => {
     dispatch(setOnSkills(inView));
@@ -24,7 +26,7 @@ function Skills() {
           inView ? 'titleAnimation' : 'opacity-0'
         }`}
       >
-        Tech Skills
+        {t('skills.title')}
       </h2>
       <div className="grid place-content-center">
         <div className="grid h-96">

@@ -1,0 +1,9 @@
+{
+	"welcome": "¡Bienvenido a mi aplicación!",
+	"language": "Idioma",
+	"select_language": "Selecciona tu idioma",
+	"about": {
+		"me": "Con experiencia en administración de bases de datos y soporte técnico. En el último año, he dedicado más de 1300 horas a estudiar y trabajar en un entorno remoto, utilizando programación en pareja, GitHub, el flujo de trabajo estándar de la industria (git-flow) y reuniones diarias para comunicarme y colaborar con desarrolladores remotos internacionales.",
+    "developer": "Soy desarrollador Full Stack"
+	}
+}

@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react';
+import { useTranslation } from "react-i18next";
 import { setProject } from '../redux/projectSlice';
 import { useDispatch } from 'react-redux';
 import { useInView } from 'react-intersection-observer';
@@ -17,10 +18,11 @@ function Projects() {
   const { ref: refProjectA, inView: inViewProjectA } = useInView();
   const { ref: refProjectB, inView: inViewProjectB } = useInView();
   const { ref: refProjectC, inView: inViewProjectC } = useInView();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const inViews = useMemo(
     () => [inViewProject, inViewProjectA, inViewProjectB, inViewProjectC],
-    [inViewProject, inViewProjectB, inViewProjectC]
+    [inViewProject, inViewProjectA, inViewProjectB, inViewProjectC]
   );
 
   const handleClick = (id) => {
@@ -43,7 +45,7 @@ function Projects() {
             inViewProjectTitle ? 'titleAnimation' : 'hidden'
           }`}
         >
-          Projects
+          {t('projects.title')}
         </h2>
       </span>
       <div className="w-full">
@@ -73,7 +75,7 @@ function Projects() {
               className="w-full hidden md:block md:absolute top-0 opacity-100 group-hover:opacity-0 hover:translate-y-10 transition-all duration-500"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+              {t('projects.click')}
             </p>
           </div>
           <div
@@ -82,11 +84,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Rent for a day
+              {t('projects.project1.name')}
             </p>
             <p className="md:text-xl text-left">
-              This is a reservation-based application to rent a
-              property/accommodation for a day.
+              {t('projects.project1.description')}
             </p>
           </div>
         </div>
@@ -103,11 +104,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Paid Ups
+              {t('projects.project2.name')}
             </p>
             <p className="md:text-xl text-left lg:text-right">
-              This application is designed to help you manage your finances and
-              expenses.
+              {t('projects.project2.description')}
             </p>
           </div>
           <div
@@ -127,7 +127,7 @@ function Projects() {
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+              {t('projects.click')}
             </p>
             <img
               src={images.carpet}
@@ -159,7 +159,7 @@ function Projects() {
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+               {t('projects.click')}
             </p>
             <img
               src={images.carpet}
@@ -174,11 +174,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Recipe App
+              {t('projects.project3.name')}
             </p>
             <p className="md:text-xl text-left">
-              The Recipe app keeps track of all your recipes, ingredients, and
-              inventory.
+              {t('projects.project3.description')}
             </p>
           </div>
         </div>
@@ -195,11 +194,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Botw Encyclopedia
+              {t('projects.project4.name')}
             </p>
             <p className="md:text-xl text-left lg:text-right">
-              This is a SPA serving as an encyclopedia for all the interactive
-              in-game items in the world of Hyrule.
+              {t('projects.project4.description')}
             </p>
           </div>
           <div
@@ -218,7 +216,7 @@ function Projects() {
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+               {t('projects.click')}
             </p>
             <img
               src={images.carpet}
@@ -251,7 +249,7 @@ function Projects() {
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+               {t('projects.click')}
             </p>
             <img
               src={images.carpet}
@@ -265,11 +263,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Space Traveler&apos;s Hub
+              {t('projects.project5.name')}
             </p>
             <p className="md:text-xl text-left">
-              This app is a Web application for a company that provides
-              commercial and scientific space travel services.
+              {t('projects.project5.description')}
             </p>
           </div>
         </div>
@@ -286,10 +283,10 @@ function Projects() {
             }`}
           >
             <p className="text-3xl xl:text-4xl text-left lg:text-right mb-3 font-dancing text-myBlue dark:text-myLightBlue">
-              Hiking and Adventure Sports
+              {t('projects.project6.name')}
             </p>
             <p className="md:text-xl text-left lg:text-right">
-              This is a web about Adventure Sports experiences.
+              {t('projects.project6.description')}
             </p>
           </div>
           <div
@@ -308,7 +305,7 @@ function Projects() {
               className="w-11/12 rounded h-fit group-hover:scale-110  lg:group-hover:scale-125 transition-all duration-400 group-hover:shadow-myShadow mx-auto"
             />
             <p className="animate-bounce md:animate-none md:group-hover:animate-bounce text-myBlue mt-7 md:mt-14 dark:text-myLightBlue">
-              Click for more 👆
+               {t('projects.click')}
             </p>
             <img
               src={images.carpet}

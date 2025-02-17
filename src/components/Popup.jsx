@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { useTranslation } from "react-i18next";
 import img from '../assets/images';
 import { GrDeploy } from 'react-icons/gr';
 import { setProject } from '../redux/projectSlice';
@@ -8,14 +9,15 @@ import images from '../assets/images';
 function Popup() {
   const { project } = useSelector((state) => state.project);
   const dispatch = useDispatch();
+  const { t } = useTranslation();
 
   const allProjects = [
     {
       image: img.rfad2,
-      name: 'Rent for a day',
+      name: t('popup.project1.name'),
       description:
-        'This is a reservation-based application to rent a property/accommodation for a day.',
-      description2: 'Full-stack app created with React and Rails.',
+        t('popup.project1.description'),
+      description2: t('popup.project1.description2'),
       link: 'https://rent-for-day-9756573c4a9e.herokuapp.com/api-docs',
       tech: [
         'Ruby on Rails',
@@ -33,10 +35,10 @@ function Popup() {
     },
     {
       image: img.paids,
-      name: 'Paid Ups',
+      name: t('popup.project2.name'),
       description:
-        'This application is designed to help you manage your finances and expenses, assisting in maintaining clear financial organization for personal, family, or work-related finances.',
-      description2: 'Full-stack app created with Ruby on Rails and PostgreSQL.',
+        t('popup.project2.description'),
+      description2: t('popup.project2.description2'),
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -50,10 +52,10 @@ function Popup() {
     },
     {
       image: img.recipe,
-      name: 'Recipe App',
+      name: t('popup.project3.name'),
       description:
-        'The Recipe app keeps track of all your recipes, ingredients, and inventory.',
-      description2: 'Full-stack app created with Ruby on Rails and PostgreSQL.',
+        t('popup.project3.description'),
+      description2: t('popup.project3.description2'),
       tech: [
         'Ruby on Rails',
         'Devise',
@@ -67,29 +69,30 @@ function Popup() {
     },
     {
       image: img.zelda,
-      name: 'Bowtf Encyclopedia',
+      name: t('popup.project4.name'),
       description:
-        'This web application is a Single Page Application (SPA) serving as an encyclopedia for all the interactive in-game items in the world of Hyrule.',
-      description2: 'Web app created with React-Redux.',
+        t('popup.project4.description'),
+      description2: t('popup.project4.description2'),
       tech: ['JavaScript', 'React-redux', 'CSS', 'HTML', 'SASS'],
       live: 'https://cesarherr.github.io/metrics_webapp_botw/',
       source: 'https://github.com/CesarHerr/metrics_webapp_botw',
     },
     {
       image: img.space,
-      name: 'Space Travelers Hub',
+      name: t('popup.project5.name'),
       description:
-        'The space travelers hub is a web application that allows users to book rockets and join space missions.',
-      description2: 'Web app created with React-Redux.',
+        t('popup.project5.description'),
+      description2: t('popup.project5.description2'),
       tech: ['JavaScript', 'React-redux', 'Jest', 'CSS', 'HTML'],
       live: 'https://cesarherr.github.io/Space_Travelers/',
       source: 'https://github.com/CesarHerr/Space_Travelers',
     },
     {
       image: img.hiking,
-      name: 'Hiking and Adventure Sports',
-      description: 'This is a web about Adventure Sports experiences',
-      description2: 'Web app created with HTML, SASS and Vanilla JavaScript.',
+      name: t('popup.project6.name'),
+      description:
+        t('popup.project6.description'),
+      description2: t('popup.project6.description2'),
       tech: ['JavaScript', 'SASS', 'HTML'],
       live: 'https://cesarherr.github.io/CapstoneModule1',
       source: 'https://github.com/CesarHerr/CapstoneModule1',

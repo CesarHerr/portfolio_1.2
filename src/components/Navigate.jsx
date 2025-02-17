@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { useTranslation } from "react-i18next";
 import { useEffect } from 'react';
 import { RiTwitterXLine } from 'react-icons/ri';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -11,6 +12,7 @@ function Navigate() {
   const { onProject, onAbout, onSkills, onContact, theme } = useSelector(
     (state) => state.project
   );
+  const { t } = useTranslation();
 
   const handleClick = () => {
     if (theme === 'dark') {
@@ -75,10 +77,10 @@ function Navigate() {
         </button>
         <div className="min-w-[250px] relative z-20">
           <h1 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 animation">
-            Hey There.
+            {t('navigate.hey')}
           </h1>
           <h2 className="text-left text-5xl xl:text-6xl font-dancing font-bold -rotate-12 w-full">
-            I&apos;m César.
+            {t('navigate.me')}
           </h2>
         </div>
         <img
@@ -90,20 +92,15 @@ function Navigate() {
       </header>
       <section>
         <h3 className="text-left text-2xl pt-5 w-10/12 ml-5 text-myBlue md:hidden dark:text-myLightBlue">
-          I&apos;m a Full Stack Developer
+          {t('navigate.developer')}
         </h3>
         <p className="w-10/12 text-left text-md ml-5 md:hidden">
           {' '}
-          With a background in database administration, and technical support.
-          In the last year I spent 1300+ hours studying and working in a remote
-          environment, in pair programming, using GitHub, industry-standard
-          git-flow, and daily stand ups to communicate and collaborate with
-          international remote developers.
+          {t('navigate.perfil')}
         </p>
         <p className="hidden md:block w-10/12 md:w-9/12 text-left ml-10 md:ml-14 text-lg">
           {' '}
-          I can help you build a product , feature or website. Look through some
-          of my work and experience!{' '}
+          {t('navigate.perfil2')}{' '}
         </p>
 
         <nav
@@ -130,7 +127,7 @@ function Navigate() {
                 onAbout ? '' : ''
               }`}
             />{' '}
-            Me{' '}
+            {t('navigate.menu.me')}{' '}
           </a>
           <a
             href="#projects"
@@ -147,7 +144,7 @@ function Navigate() {
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Projects
+            {t('navigate.menu.projects')}
           </a>
           <a
             href="#skills"
@@ -164,7 +161,7 @@ function Navigate() {
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Skills
+            {t('navigate.menu.skills')}
           </a>
           <a
             href="#contactForm"
@@ -181,7 +178,7 @@ function Navigate() {
             }`}
           >
             <hr className="hidden md:inline border-1 border-myGray px-2  mx-2 relative top-3 dark:border-white" />{' '}
-            Contact
+            {t('navigate.menu.contact')}
           </a>
         </nav>
       </section>

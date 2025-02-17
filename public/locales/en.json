@@ -1,0 +1,101 @@
+{
+  "welcome": "Welcome to my app!",
+  "language": "Language",
+  "select_language": "Select your language",
+  "about": {
+    "me": "With a background in database administration, and technical support. In the last year I spent 1300+ hours studying and working in a remote environment, in pair programming, using GitHub, industry-standardgit-flow, and daily stand ups to communicate and collaborate with international remote developers.",
+    "developer": "I'm a Full Stack Developer"
+  },
+  "contactForm": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email adress",
+    "textAreaPlaceHolder": "Leave a comment...",
+    "submit": "Submit"
+  },
+  "navigate": {
+    "hey": "Hey There.",
+    "me": "I'm César.",
+    "developer": "I'm a Full Stack Developer",
+    "perfil": "With a background in database administration, and technical support. In the last year I spent 1300+ hours studying and working in a remote environment, in pair programming, using GitHub, industry-standard git-flow, and daily stand ups to communicate and collaborate with international remote developers.",
+    "perfil2": "I can help you build a product , feature or website. Look through some of my work and experience!",
+    "menu": {
+      "me": "Me",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact"
+    }
+  },
+  "popup": {
+    "project1": {
+      "name": "Rent for a day",
+      "description": "This is a reservation-based application to rent a property/accommodation for a day.",
+      "description2": "Full-stack app created with React and Rails."
+    },
+    "project2": {
+      "name": "Paid Ups",
+      "description": "This application is designed to help you manage your finances and expenses, assisting in maintaining clear financial organization for personal, family, or work-related finances.",
+      "description2": "Full-stack app created with Ruby on Rails and PostgreSQL."
+    },
+    "project3": {
+      "name": "Recipe App",
+      "description": "The Recipe app keeps track of all your recipes, ingredients, and inventory.",
+      "description2": "Full-stack app created with Ruby on Rails and PostgreSQL."
+    },
+    "project4": {
+      "name": "Bowtf Encyclopedia",
+      "description": "This web application is a Single Page Application (SPA) serving as an encyclopedia for all the interactive in-game items in the world of Hyrule.",
+      "description2": "Web app created with React-Redux."
+    },
+    "project5": {
+      "name": "Space Travelers Hub",
+      "description": "The space travelers hub is a web application that allows users to book rockets and join space missions.",
+      "description2": "Web app created with React-Redux."
+    },
+    "project6": {
+      "name": "Hiking and Adventure Sports",
+      "description": "This is a web about Adventure Sports experiences",
+      "description2": "Web app created with HTML, SASS and Vanilla JavaScript."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "click": "Click for more 👆",
+    "project1": {
+      "name": "Rent for a day",
+      "description": "This is a reservation-based application to rent a property/accommodation for a day."
+    },
+    "project2": {
+      "name": "Paid Ups",
+      "description": "This application is designed to help you manage your finances and expenses, assisting in maintaining clear financial organization for personal, family, or work-related finances."
+    },
+    "project3": {
+      "name": "Recipe App",
+      "description": "The Recipe app keeps track of all your recipes, ingredients, and inventory."
+    },
+    "project4": {
+      "name": "Bowtf Encyclopedia",
+      "description": "This web application is a Single Page Application (SPA) serving as an encyclopedia for all the interactive in-game items in the world of Hyrule."
+    },
+    "project5": {
+      "name": "Space Travelers Hub",
+      "description": "The space travelers hub is a web application that allows users to book rockets and join space missions."
+    },
+    "project6": {
+      "name": "Hiking and Adventure Sports",
+      "description": "This is a web about Adventure Sports experiences"
+    }
+  },
+  "skills" : {
+    "title": "Skills"
+  },
+  "ticTacToe": {
+    "message1": "It's your turn !",
+    "message2": "Come on is easy !",
+    "new": "Exit",
+    "tie": "Tie",
+    "winner": "Winner :",
+    "draw": "Draw"
+  }
+
+}
