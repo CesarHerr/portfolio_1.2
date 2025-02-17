@@ -16,34 +16,36 @@ function Skills() {
         </h2>
       </span>
       <table border='2' className='border-collapse w-8/12'>
-        <tr className='text-myBlue dark:text-myLightBlue'>
-          <th className='border-b-2 border-myBlue dark:border-white px-4 py-2 text-right'>
-            {t('experience.company')}
-          </th>
-          <th className='border-b-2 border-myBlue dark:border-white px-4 py-2 text-left'>
-            {t('experience.role')}
-          </th>
-        </tr>
-        <tr>
-          <td className='border-r-2 border-myBlue dark:border-white px-4 py-2 text-right'>
-            <p>{t('experience.job1.company')} </p>
-            <p className='text-xs'>{t('experience.job1.date')}</p>
-          </td>
-          <td className='px-4 py-2 text-left'>
-            <p>{t('experience.job1.role')}</p>
-            <p className='text-xs'>{t('experience.job1.jobDescription')}</p>
-          </td>
-        </tr>
-        <tr>
-          <td className='border-r-2 border-myBlue dark:border-white px-4 py-2 text-right'>
-            <p>{t('experience.job2.company')}</p>
-            <p className='text-xs'>{t('experience.job2.date')}</p>
-          </td>
-          <td className='px-4 py-2 text-left'>
-            <p>{t('experience.job2.role')}</p>
-            <p className='text-xs'>{t('experience.job2.jobDescription')}</p>
-          </td>
-        </tr>
+        <tbody>
+          <tr className='text-myBlue dark:text-myLightBlue'>
+            <th className='border-b-2 border-myBlue dark:border-white px-4 py-2 text-right'>
+              {t('experience.company')}
+            </th>
+            <th className='border-b-2 border-myBlue dark:border-white px-4 py-2 text-left'>
+              {t('experience.role')}
+            </th>
+          </tr>
+          <tr>
+            <td className='border-r-2 border-myBlue dark:border-white px-4 py-2 text-right'>
+              <p>{t('experience.job1.company')} </p>
+              <p className='text-xs'>{t('experience.job1.date')}</p>
+            </td>
+            <td className='px-4 py-2 text-left'>
+              <p>{t('experience.job1.role')}</p>
+              <p className='text-xs'>{t('experience.job1.jobDescription')}</p>
+            </td>
+          </tr>
+          <tr>
+            <td className='border-r-2 border-myBlue dark:border-white px-4 py-2 text-right'>
+              <p>{t('experience.job2.company')}</p>
+              <p className='text-xs'>{t('experience.job2.date')}</p>
+            </td>
+            <td className='px-4 py-2 text-left'>
+              <p>{t('experience.job2.role')}</p>
+              <p className='text-xs'>{t('experience.job2.jobDescription')}</p>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </section>
   )

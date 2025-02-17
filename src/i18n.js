@@ -1,19 +1,27 @@
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend"; // Para cargar archivos JSON
+import { initReactI18next } from "react-i18next";
 
 i18n
-  .use(HttpApi) // Carga archivos JSON desde locales/
-  .use(LanguageDetector) // Detecta el idioma del navegador
+  .use(Backend)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en", // Idioma por defecto
-    debug: true, // Activa logs en consola (útil para desarrollo)
-    interpolation: { escapeValue: false },
+    fallbackLng: "en", // ✅ Si el navegador usa en-GB, usará en
+    supportedLngs: ["en", "es"], // ✅ Idiomas disponibles
+    debug: true, // Para ver logs en consola
+    interpolation: {
+      escapeValue: false,
+    },
     backend: {
-      loadPath: "/locales/{{lng}}.json", // Ruta de los archivos JSON
+      loadPath: "/portfolio/locales/{{lng}}.json",
+    },
+    detection: {
+      order: ["querystring", "cookie", "localStorage", "navigator", "htmlTag"],
+      caches: ["localStorage", "cookie"],
     },
   });
 
 export default i18n;
+
