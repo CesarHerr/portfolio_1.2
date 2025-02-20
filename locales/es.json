@@ -9,18 +9,18 @@
   "experience": {
     "title": "Experiencia",
     "company": "Empresa",
-    "rol": "cargo",
+    "role": "Cargo",
     "job1": {
       "company": "NTT DATA Europe & Latam",
-      "date": "(feb 2014 - Presente)",
+      "date": "(feb 2024 - Presente)",
       "role": "Center developer",
-      "jobDescription": "Ruby on rails, vue, mongoDB, Jira, confluence, trabajo remoto"
+      "jobDescription": "Ruby on Rails, Vue, MongoDB, Jira, Confluence, Trabajo remoto"
     },
     "job2": {
       "company": "Proyectos personales",
-      "date": "(mar 2013 - Presente)",
+      "date": "(mar 2023 - Presente)",
       "role": "Desarrollador Full-Stack",
-      "jobDescription": "Ruby on rails, JavaScript, postgresSQl, react, gitflow, trabajo remoto"
+      "jobDescription": "Ruby on Rails, JavaScript, PostgresSQL, React, Redux, Gitflow, Trabajo remoto"
     }
   },
   "contactForm": {
@@ -35,7 +35,7 @@
     "me": "Soy César.",
     "developer": "Desarrollador Full Stack",
     "perfil": "Con experiencia en administración de bases de datos y soporte técnico. En los últimos años, me he especializado en el desarrollo de aplicaciones web, destacando en Ruby on Rails para backend y JavaScript con React y Vue para frontend. Además, cuento con experiencia en Gitflow, metodologías ágiles y trabajo remoto.",
-    "perfil2": "Puedo ayudarte a construir una app, funcionalidad o sitio web. ¡Mira algunos de mis trabajos y experiencia!",
+    "perfil2": "Puedo ayudarte a construir una app, funcionalidad o sitio web. Mira algunos de mis trabajos y experiencia 😉",
     "menu": {
       "me": "Yo",
       "projects": "Proyectos",
