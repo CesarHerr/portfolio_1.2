@@ -12,15 +12,15 @@
     "role": "Role",
     "job1": {
       "company": "NTT DATA Europe & Latam",
-      "date": "(Feb 2014 - Present)",
+      "date": "(Feb 2024 - Present)",
       "role": "Center Developer",
-      "jobDescription": "Ruby on Rails, Vue, MongoDB, Jira, Confluence, remote work"
+      "jobDescription": "Ruby on Rails, Vue, MongoDB, Jira, Confluence, Remote work"
     },
     "job2": {
       "company": "Personal Projects",
-      "date": "(Mar 2013 - Present)",
+      "date": "(Mar 2023 - Present)",
       "role": "Full-Stack Developer",
-      "jobDescription": "Ruby on Rails, JavaScript, PostgreSQL, React, GitFlow, remote work"
+      "jobDescription": "Ruby on Rails, JavaScript, PostgresSQL, React, Redux, Gitflow, Remote work"
     }
   },
   "contactForm": {
